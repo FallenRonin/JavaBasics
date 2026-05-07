@@ -1,4 +1,4 @@
-package solution.week01;
+package solution.week02;
 
 import java.util.Scanner;
 
@@ -6,20 +6,18 @@ public class Day6 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int[] grades = null;
-        int gradesCount = 0;
 
         System.out.println("Enter student name:");
         String name = scanner.nextLine();
         System.out.println("Enter subject name:");
         String subject = scanner.nextLine();
         System.out.println("Enter grades count:");
-        gradesCount = scanner.nextInt();
+        int gradesCount = scanner.nextInt();
         if (gradesCount <= 0) {
             System.out.println("Grades count must be above 0");
             return;
         }
-        grades = initGrades(gradesCount, scanner);
+        int[] grades = initGrades(gradesCount, scanner);
         System.out.println("Results for student " + name + " by subject " + subject);
         printGrades(grades);
         System.out.println("Average grade is: " + getAverage(grades));

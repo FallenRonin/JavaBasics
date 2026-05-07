@@ -1,4 +1,4 @@
-package solution.week01;
+package solution.week02;
 
 public class Day1 {
 
@@ -13,7 +13,7 @@ public class Day1 {
         printReversedElementsOfArray(array);
         System.out.println();
 
-        // Домашка
+        System.out.println(getAverageOfArray(array));
         System.out.println(getEvenCountFromArray(array));
         System.out.println(getPositiveCountFromArray(array));
 
@@ -42,8 +42,8 @@ public class Day1 {
     /**
      * Получение среднего значения
      */
-    private static int printAverageFromArray(int[] array) {
-        int sum = getSumOfArray(array);
+    private static double getAverageOfArray(int[] array) {
+        double sum = getSumOfArray(array);
         return sum / array.length;
     }
 
