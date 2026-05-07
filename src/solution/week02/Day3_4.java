@@ -1,4 +1,4 @@
-package solution.week01;
+package solution.week02;
 
 
 // Объединил с 4 днём, так как цель 4 дня и так исполнялась прямо с первого

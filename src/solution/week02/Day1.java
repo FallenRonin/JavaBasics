@@ -1,4 +1,4 @@
-package solution.week01;
+package solution.week02;
 
 public class Day1 {
 
